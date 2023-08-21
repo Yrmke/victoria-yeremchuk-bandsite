@@ -1,0 +1,112 @@
+@use "./variables" as *;
+@use "./../mixins/media-queries" as *;
+
+.footer{
+    background-color: #323232;
+    padding-left: 16px;
+    position: relative;
+}
+.footer-title{
+    padding-top: 16px;
+    @include tablet{
+        padding-left: 24px;
+    }
+    @include desktop{
+        padding-left: 6%;
+    }
+}
+.footer-container{
+    @include tablet{
+        display:flex;
+        padding-left: 24px;
+    }
+    @include desktop{
+        padding-left: 6%;
+    }
+}
+.footer-contacts{
+    @include tablet{
+        width:30%;
+        align-items: center;
+        
+    }
+    @include desktop{
+        width: 23%;
+    }
+}
+.footer-top{
+    @include tablet{
+        display: flex;
+        padding-top: 16px;
+    }
+}
+.footer-contact{
+    @include tablet{
+        margin-top: 0%;
+    }
+}
+.footer-contact, 
+.footer-location{
+    margin-bottom: 0%;
+}
+.footer-workplace, 
+.footer-location, 
+.footer-title{
+    margin-top: 0%;
+}
+.footer-copyright{
+    margin-bottom: 0%;
+    font-size: 10px;
+    padding-bottom: 16px;
+}
+.footer-contact, 
+.footer-workplace, 
+.footer-location, 
+.footer-email, 
+.footer.contacts,
+.footer-title, 
+.footer-copyright{
+    color: white;
+    
+}
+.footer-low{
+    padding-top: 24px;
+}
+
+// ICONS
+.footer-social{
+    padding-right: 24px;
+   
+}
+.footer-socials{
+    @include tablet{
+    margin: 30px 0px 0px 20px;
+    }
+    @include desktop{
+    margin-top: 2.3%;
+    }
+}
+
+// LOGO
+.footer-logo{
+    @include tablet{
+    position: absolute;
+    margin-top: -245px;
+    margin-left: 75%;
+    
+    }
+    @include desktop{
+    margin-top: -245px;
+    margin-left: 75%;
+    }
+}
+
+// COPYRIGHT
+.footer-copyright{
+    @include tablet{
+    margin-left: 24px;
+    }
+    @include desktop{
+        margin-left: 6%;
+    }
+}

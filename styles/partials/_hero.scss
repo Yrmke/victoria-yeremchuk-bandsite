@@ -1,0 +1,49 @@
+@use "./../mixins/media-queries" as *;
+
+
+//   BACKGROUND IMAGE
+.hero {
+  height: 30vh;
+  background-image: url("./../../assets/Images/hero-bio.jpg");
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: white;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  @include tablet{
+    height: 50vh;
+  }
+  @include desktop{
+    height: 60vh;
+  }
+}
+.hero-text {
+  margin: 0%;
+  position: relative;
+  top: 45%;
+  right: 15%;
+  font-weight: 600;
+  font-size: 24px;
+  //     top: 50%;
+  //     left: 50%;
+  //   transform: translate(-50%, -50%);
+
+  @include tablet {
+    font-size: 60px;
+    top: 55%;
+    right: 17%;
+  }
+
+  @include desktop{
+    right: 25%;
+  }
+}

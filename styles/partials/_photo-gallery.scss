@@ -1,0 +1,52 @@
+@use "./variables" as *;
+@use "./../mixins/media-queries" as *;
+
+.photo-gallery{
+    background-color:#FAFAFA;
+}
+.photo-gallery-title{
+    padding-top: 24px;
+    color: #323232;
+    padding-left: 16px;
+
+    @include tablet {
+        padding-left: 36px;
+    }
+
+    @include desktop{
+        margin-left: 5%;
+    }
+}
+
+.photo-gallery-img{
+    margin: 0% 5% 0% 5%;
+    padding-bottom: 16px;
+    width: 90%;
+
+    @include tablet {
+        width: 32%;
+        margin: 0%;
+        padding-right: 16px;
+    }
+}
+
+// COLUMNS
+.photos-container{
+    @include tablet {
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction: column;
+        padding-left: 36px;
+    }
+
+    @include desktop{
+        margin: 0% 5% 0% 5%;
+    }
+}
+.photos-column-one, 
+.photos-column-two, 
+.photos-column-three{
+    @include tablet {
+        width:100%;
+    }
+}

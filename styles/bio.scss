@@ -1,0 +1,73 @@
+@use "./partials/nav";
+@use "./partials/ressets";
+@use "./mixins/media-queries" as *;
+@use "./partials/variables" as *;
+@use "./partials/hero";
+@use "./partials/description" as *;
+@use "./partials/photo-gallery" as *;
+@use "./partials/footer" as *;
+
+body {
+  font-family: "Avenir";
+}
+// @font-face {
+//   font-family: "Avenir Next";
+//   src: url(./../assets/Font/AvenirNextLTPro-Regular.otf),
+//     url(./../assets/Font/AvenirNextLTPro-Demi.otf),
+//     url(./../assets/Font/AvenirNextLTPro-Bold.otf);
+// }
+
+//  TEXT STYLE
+h1,
+h2,
+h3,
+.description-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+
+  @include tablet{
+    font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  }
+}
+
+.description-quote, 
+.description-text-title{
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+
+  @include tablet{
+    font-size: 24px;
+  line-height: 32px;
+  }
+}
+.description-quote2,
+.footer-name,
+.footer-workplace, 
+h4{
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+  
+  @include tablet{
+    font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  }
+}
+p,
+.nav-list-link {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+
+  @include tablet{
+    font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  }
+}
+
