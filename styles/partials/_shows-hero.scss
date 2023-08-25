@@ -1,0 +1,40 @@
+@use "./../mixins/media-queries" as *;
+
+// hero image
+.hero{
+    height: 30vh;
+    background-image: url("./../../assets/Images/hero-shows.jpg");
+    background-size: cover;
+  position: relative;
+  text-align: center;
+  color: white;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  @include tablet{
+    height: 50vh;
+  }
+  @include desktop{
+    height: 60vh;
+  }
+}
+// embed a song from SoundCloud
+iframe{
+    height: 100px;
+    width: 90%;
+    position: relative;
+}
+
+// text style
+.hero-text{
+    position: relative;
+    margin: 0%;
+
+}
