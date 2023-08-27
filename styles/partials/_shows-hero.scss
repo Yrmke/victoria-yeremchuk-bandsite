@@ -1,5 +1,5 @@
-@use "./../mixins/media-queries" as *;
-
+@use "./media-queries" as *;
+@use "./global" ;
 // hero image
 .hero{
     height: 30vh;
@@ -16,25 +16,74 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(49, 44, 44, 0.369);
   }
   @include tablet{
     height: 50vh;
   }
   @include desktop{
-    height: 60vh;
+    height: 50vh;
   }
 }
-// embed a song from SoundCloud
+// song from SoundCloud
 iframe{
     height: 100px;
     width: 90%;
     position: relative;
+    top: 10%;
+
+    @include tablet{
+        height: 120px;
+        width: 50%;
+        top: 5%;
+        right: 160px;
+    }
+    @include tablet{
+        height: 170px;
+        width: 40%;
+        top: 5%;
+        left: 20%;
+    }
 }
 
 // text style
 .hero-text{
     position: relative;
     margin: 0%;
+    text-align: left;
+    padding-left: 16px;
+    top: 30px;
 
+    @include tablet{
+        font-size: 24px;
+        top: 10%;
+        left: 20px;
+    }
+    @include desktop {
+        top: 32%;
+        padding-left: 48px;
+    }
+
+}
+.hero-title{
+    
+    position: relative;
+    width: 70vw;
+    text-align: left;
+    padding-left: 16px;
+    top: 30px;
+
+    @include tablet{
+        font-size: 60px;
+        line-height: 68px;
+        top: 5%;
+        left: 20px;
+        width: 70vw;
+    }
+    @include desktop{
+        width: 39vw;
+        font-weight:500 ;
+        top: 30%;
+        padding-left: 48px;
+    }
 }
