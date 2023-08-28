@@ -1,15 +1,15 @@
 @use "./partials/nav";
 @use "./partials/ressets";
-@use "./mixins/media-queries" as *;
+@use "./partials/media-queries" as *;
 @use "./partials/variables" as *;
 @use "./partials/hero";
 @use "./partials/description" as *;
 @use "./partials/photo-gallery" as *;
 @use "./partials/footer" as *;
+@use "./partials/comments";
+@use "./partials/global";
 
-body {
-  font-family: "Avenir";
-}
+
 // @font-face {
 //   font-family: "Avenir Next";
 //   src: url(./../assets/Font/AvenirNextLTPro-Regular.otf),
@@ -18,9 +18,7 @@ body {
 // }
 
 //  TEXT STYLE
-h1,
-h2,
-h3,
+
 .description-title {
   font-size: 24px;
   font-weight: 700;
@@ -46,8 +44,7 @@ h3,
 }
 .description-quote2,
 .footer-name,
-.footer-workplace, 
-h4{
+.footer-workplace{
   font-size: 13px;
   line-height: 18px;
   font-weight: 600;
@@ -58,7 +55,7 @@ h4{
   font-weight: 600;
   }
 }
-p,
+
 .nav-list-link {
   font-size: 13px;
   line-height: 18px;

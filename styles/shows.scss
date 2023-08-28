@@ -1,0 +1,14 @@
+@use "./partials/nav";
+@use "./partials/shows-hero";
+@use "./partials/ressets";
+@use "./partials/media-queries" as *;
+@use "./partials/variables" as *;
+@use "./partials/shows-tickets";
+@use "./partials/footer";
+// @use "./partials/global";
+// @use "./bio.scss";
+
+body {
+    font-family: "Avenir";
+  }
+ 

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/bio.css">
+    <script src="./scripts/index-page.js" defer></script>
     <title>BandSite</title>
 </head>
 <body>
@@ -100,6 +101,37 @@
                 <img src="./assets/Images/Photo-gallery-9.jpg" alt="confetti and people" class="photo-gallery-img"/>
             </div>
         </div>
+    </section>
+
+           <!-- COMMENTS         -->
+    <section class="comments">
+        <h3 class="comments-title">Join the Conversation</h3>
+        <div class="comments-container">
+            <div class="comments-img__container" >
+                <img 
+                src="./assets/Images/Mohan-muruge.jpg" 
+                class="comments-img" 
+                alt="profile image" />
+            </div>
+            
+            <form class="comments-form">
+            
+                <!-- name -->
+                <label for="userName">Name</label>
+                <input type="text" id="userName" name = "userName" placeholder="Enter your name" />
+                <!-- comment section -->
+                <label for="userComment">Comment</label>
+                <input type="text" id="userComment" name = "userComment" placeholder="Add a new comment" />
+                <button type="submit" class="comments-form__button">COMMENT</button>
+                
+            </form>
+        </div>
+    
+
+        <!--        POSTED COMMENTS -->
+        <div class="posted-comments">
+        </div>
+
     </section>
 </main>
 

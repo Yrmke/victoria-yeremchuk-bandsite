@@ -22,7 +22,7 @@
     height: 50vh;
   }
   @include desktop{
-    height: 50vh;
+    height: 45vh;
   }
 }
 // song from SoundCloud
@@ -31,7 +31,7 @@ iframe{
     width: 90%;
     position: relative;
     top: 10%;
-
+border-radius: 5px;
     @include tablet{
         height: 120px;
         width: 50%;

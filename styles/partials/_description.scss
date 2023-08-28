@@ -1,5 +1,5 @@
 @use "./variables" as *;
-@use "./../mixins/media-queries" as *;
+@use "./media-queries" as *;
 
 .description-title{
     color: #323232;
@@ -59,6 +59,7 @@
     }
 }
 .description-quote2{
+    color: #323232;
     @include tablet{
         padding-bottom: 36px;
     }

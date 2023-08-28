@@ -31,14 +31,22 @@ const shows = [
         location: "San Francisko, CA"
     }
 ]
+
+// h2 title "SHOWS"
+const showSection = document.querySelector(".shows");
+const showTitle = document.createElement("h2");
+    showTitle.classList.add("shows-title");
+    showTitle.innerText = "Shows";
+    showSection.appendChild(showTitle);
+
 const displayShows = (tickets) =>{
     const showSection = document.querySelector(".shows");
 
     // h2 title
-    const showTitle = document.createElement("h2");
-    showTitle.classList.add("shows-title");
-    showTitle.innerText = "Shows";
-    showSection.appendChild(showTitle);
+    // const showTitle = document.createElement("h2");
+    // showTitle.classList.add("shows-title");
+    // showTitle.innerText = "Shows";
+    // showSection.appendChild(showTitle);
 
     // list
     const showList = document.createElement("ul");
@@ -52,14 +60,14 @@ const displayShows = (tickets) =>{
 
     // show info
     // DATE
-    const titleItem = document.createElement("h3");
+    const titleItem = document.createElement("p");
     titleItem.classList.add("shows-list__title");
     titleItem.innerHTML = "DATE";
     itemList.appendChild(titleItem);
 
     // DAY MON YEAR
     const dateItem = document.createElement("p");
-    dateItem.classList.add("shows-list__info");
+    dateItem.classList.add("shows-list__infob");
     dateItem.innerHTML = tickets.date;
     itemList.appendChild(dateItem);
 
@@ -78,7 +86,7 @@ const displayShows = (tickets) =>{
     // LOCATION
     const areaItem = document.createElement("p");
     areaItem.classList.add("shows-list__title");
-    areaItem.innerHTML = "Location";
+    areaItem.innerHTML = "LOCATION";
     itemList.appendChild(areaItem);
     
    

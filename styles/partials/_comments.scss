@@ -1,0 +1,220 @@
+
+@use "./variables" as *;
+@use "./media-queries" as *;
+@use "./global";
+
+.comments-title{
+    margin-top: 0%;
+    color: #323232;
+
+    @include tablet{
+        margin-top: 2%;
+    }
+    @include desktop{
+        padding-left: 48px;
+    }
+}
+// image
+.comments-img__container{
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    overflow: hidden;
+    margin-top: 25px;
+    margin-right: 20px;
+    
+    @include tablet{
+        height: 50px;
+        width: 50px;
+    }
+    // @include desktop{
+    //     height: 55px;
+    //     width: 65px;
+    // }
+}
+.comments-img{
+    height: 40px;
+    width: 50px;
+    object-fit: cover;
+
+    @include tablet{
+        height: 55px;
+        width: 60px;
+    }
+    // @include desktop{
+    //     height: 60px;
+    //     width: 70px;
+    // }
+}
+
+.comments-form{
+    display: flex;
+    flex-direction: column;
+
+    @include desktop{
+        // align-items: center;
+    }
+    // margin-left: 10%;
+    // padding-left: 20%;
+}
+
+.comments-container{
+    display: flex;
+    border-bottom: 1px solid #E1E1E1;
+
+    @include tablet{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    @include desktop{
+        margin-left: 25%;
+        margin-right: 33%;
+    }
+}
+.comments{
+    padding: 16px;
+    border-bottom: 1px solid #E1E1E1;
+
+    @include tablet{
+        padding-left: 48px;
+        padding-right: 50px;
+    }
+    // @include desktop{
+    //     align-items: center;
+    // }
+}
+label{
+    color: #AFAFAF;
+    margin: 4px 0px 4px 0px;
+}
+#userName, #userComment{
+    background-color: #FAFAFA;
+    border-radius: 4px;
+    border: 1px solid #E1E1E1;
+    width: 100%;
+    height: 36px;
+    margin-bottom: 5%;
+
+    &:active{
+
+        border-color:#323232;
+    }
+
+    @include tablet{
+        width: 60vw;
+        height: 48px;
+    }
+
+    @include desktop{
+        width: 30vw;
+        height: 48px;
+    }
+
+}
+#userComment{
+    position: relative;
+    height: 72px;
+
+    &::placeholder{
+        position: absolute;
+        top: 10px;
+    }
+}
+::placeholder{
+    color: black;
+    padding-left: 4%;
+}
+
+// button
+.comments-form__button{
+    background-color: #323232;
+    color: white;
+    height: 40px;
+    min-width: 150px;
+    border-radius: 4px;
+    border: 0;
+    width: 100%;
+    margin: 0.5rem 0rem 0.8rem 0rem;
+    
+    &:hover{
+background-color: #000000;
+    }
+    &:last-child{
+    @include tablet {
+        width: 30%;
+        align-self: flex-end;
+    }
+    
+    @include desktop{
+        align-self: flex-end;
+    }}
+}
+
+// DEFAULT COMMENTS
+.previous-comment{
+    position: relative;
+    border-bottom: 1px solid #E1E1E1;
+    display: flex;
+    flex-direction: column;
+    
+    @include tablet{
+        // padding-left: 48px;
+        // padding-right: 50px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    @include desktop{
+        margin-left: 25%;
+        margin-right: 33%;
+    }
+
+    &__date{
+        position: absolute;
+        top: 3px;
+        left: 70%;
+        color: #E1E1E1;
+
+        @include tablet{
+            margin-left: 5%;
+        }
+    }
+    &__description{
+        padding-left: 40px;
+
+        @include tablet{
+            padding-left: 55px;
+            margin-top: -10px;
+        }
+    }
+}
+.previous-comment__content{
+    position: absolute;
+}
+
+// comment name
+.previous-comment__name{
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+    font-weight: 500;
+    @include tablet{
+        margin-left: 55px;
+    }
+}
+
+// profile pictures
+.previous-comment__pic{
+    position: relative;
+    top: 13px;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    background-color: #E1E1E1;
+
+    @include tablet {
+        height: 50px;
+        width: 50px;
+    }
+}

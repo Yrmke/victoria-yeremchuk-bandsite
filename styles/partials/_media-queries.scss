@@ -1,4 +1,4 @@
-@use "../partials/variables" as *;
+@use "./variables" as *;
 
 @mixin tablet {
     @media (min-width: $tablet-breakpoint){
