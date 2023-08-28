@@ -85,7 +85,7 @@ for (let index = 0; index < comments.length; index++) {
 const form = document.querySelector('.comments-form')
 
 form.addEventListener('submit', handleSubmit)
-
+// button.addEventListener("reset", handleSubmit)
 // let timestamp = Date.now();
 // console.log(timestamp);
 

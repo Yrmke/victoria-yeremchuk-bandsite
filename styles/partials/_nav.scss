@@ -40,23 +40,27 @@
   margin-bottom: 0%;
   padding: 0%;
 
-  &-link {
+  &-link{
     color: #afafaf;
-    width: 100%;
-    padding: 0% 0% 5% 17%;
-
+    text-decoration: none;
     &:hover,
     &:active {
       color: #ffffff;
+      font-weight: 700;
+    }
+  }
+  &-item {
+    width: 100%;
+    padding: 0% 0% 5% 17%;
+    &:hover,
+    &:active {
       border-bottom: 3px solid #ffffff;
 
       @include tablet {
         border-bottom: 3px solid #ffffff;
       }
     }
-    &:active {
-      font-weight: 700;
-    }
+   
     @include tablet {
       margin-left: 40%;
       padding: 0% 0% 19% 0%;
