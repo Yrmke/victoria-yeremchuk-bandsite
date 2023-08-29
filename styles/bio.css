@@ -431,6 +431,28 @@ body {
   }
 }
 
+@font-face {
+  font-family: "Avenir Next";
+  src: url("./../../assets/Font/AvenirNextLTPro-Regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("./../../assets/Font/AvenirNextLTPro-Demi.otf") format("otf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("./../../assets/Font/AvenirNextLTPro-Bold.otf") format("otf");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  font-family: "Avenir Next";
+}
+
 h1,
 h2,
 h3 {
@@ -472,10 +494,6 @@ p {
     line-height: 22px;
     font-weight: 400;
   }
-}
-
-body {
-  font-family: "Avenir";
 }
 
 .comments-title {
