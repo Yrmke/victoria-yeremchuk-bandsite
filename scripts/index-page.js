@@ -12,7 +12,7 @@ const commentList = document.querySelector(".posted-comments");
     response.data.reverse().forEach(displayComment);
   })
   .catch(function (error) {
-    console.log(error);
+    alert(error);
   });
 
 function displayComment(comment) {
@@ -43,7 +43,7 @@ function displayComment(comment) {
   // date
   const dateElement = document.createElement("p");
   dateElement.classList.add("posted-comment__date");
-  dateElement.innerText = date.getMonth()+1  + '/' +  date.getDate() + '/' + date.getFullYear();
+  dateElement.innerText = date.getMonth()+1  + '/'  + date.getDate() + '/' + date.getFullYear();
   commentEl.appendChild(dateElement);
 
   // description
@@ -54,11 +54,20 @@ function displayComment(comment) {
 }
 
 
+// const commentInput = document.getElementById("userComment");
+// function clearThis(nameInput,userComment) {
+//   nameInput.innerText= " ";
+//   userComment.innerText=" ";
+// }
+
+
 const form = document.querySelector(".comments-form");
 form.addEventListener("submit", handleSubmit);
 
+
 function handleSubmit(e) {
   e.preventDefault();
+  
   const name = e.target.userName.value;
   const comment = e.target.userComment.value;
 
@@ -67,6 +76,7 @@ function handleSubmit(e) {
     comment: comment,
   };
 
+  form.reset();
 axios
   .post(usersURL, newComment)
   .then((response) => {
@@ -81,13 +91,13 @@ axios
     response.data.reverse().forEach(displayComment);
   })
   .catch(function (error) {
-    console.log(error);
+    alert(error);
   });
 
 // we have posted!!
     })
     .catch(function (error) {
-      console.log(error);
+      alert(error);
     });
 
  
