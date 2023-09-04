@@ -50,6 +50,10 @@
     &-form{
         display: flex;
         flex-direction: column;
+
+        @include desktop{
+            margin-left: 5%;
+        }
     }
     &-container{
         display: flex;
@@ -99,7 +103,7 @@ label{
     background-color: #FAFAFA;
     border-radius: 4px;
     border: 1px solid #E1E1E1;
-    width: 100%;
+    width: 70vw;
     height: 36px;
     margin-bottom: 5%;
 
@@ -114,7 +118,7 @@ label{
     }
 
     @include desktop{
-        width: 30vw;
+        width: 31vw;
         height: 48px;
     }
 
@@ -122,6 +126,7 @@ label{
 #userComment{
     position: relative;
     height: 72px;
+    resize: none;
     &::placeholder{
         position: absolute;
         top: 10px;
