@@ -499,6 +499,16 @@ p {
   }
 }
 
+.comments {
+  padding: 16px;
+  border-bottom: 1px solid #E1E1E1;
+}
+@media (min-width: 768px) {
+  .comments {
+    padding-left: 48px;
+    padding-right: 50px;
+  }
+}
 .comments-title {
   margin-top: 0%;
   color: #323232;
@@ -510,10 +520,9 @@ p {
 }
 @media (min-width: 1280px) {
   .comments-title {
-    padding-left: 48px;
+    padding-left: 80px;
   }
 }
-
 .comments-img__container {
   border-radius: 50%;
   height: 36px;
@@ -528,7 +537,6 @@ p {
     width: 50px;
   }
 }
-
 .comments-img {
   height: 40px;
   width: 50px;
@@ -541,7 +549,6 @@ p {
     width: 60px;
   }
 }
-
 .comments-form {
   display: flex;
   flex-direction: column;
@@ -562,15 +569,28 @@ p {
     margin-right: 33%;
   }
 }
-
-.comments {
-  padding: 16px;
-  border-bottom: 1px solid #E1E1E1;
+.comments-form__button {
+  background-color: #323232;
+  color: white;
+  height: 40px;
+  min-width: 150px;
+  border-radius: 4px;
+  border: 0;
+  width: 100%;
+  margin: 0.5rem 0rem 0.8rem 0rem;
+}
+.comments-form__button:hover {
+  background-color: #000000;
 }
 @media (min-width: 768px) {
-  .comments {
-    padding-left: 48px;
-    padding-right: 50px;
+  .comments-form__button:last-child {
+    width: 30%;
+    align-self: flex-end;
+  }
+}
+@media (min-width: 1280px) {
+  .comments-form__button:last-child {
+    align-self: flex-end;
   }
 }
 
@@ -626,31 +646,6 @@ label {
   padding-left: 4%;
 }
 
-.comments-form__button {
-  background-color: #323232;
-  color: white;
-  height: 40px;
-  min-width: 150px;
-  border-radius: 4px;
-  border: 0;
-  width: 100%;
-  margin: 0.5rem 0rem 0.8rem 0rem;
-}
-.comments-form__button:hover {
-  background-color: #000000;
-}
-@media (min-width: 768px) {
-  .comments-form__button:last-child {
-    width: 30%;
-    align-self: flex-end;
-  }
-}
-@media (min-width: 1280px) {
-  .comments-form__button:last-child {
-    align-self: flex-end;
-  }
-}
-
 .previous-comment {
   position: relative;
   border-bottom: 1px solid #E1E1E1;
@@ -680,6 +675,11 @@ label {
     margin-left: 5%;
   }
 }
+@media (min-width: 1280px) {
+  .previous-comment__date {
+    left: 80%;
+  }
+}
 .previous-comment__description {
   padding-left: 40px;
 }
@@ -689,11 +689,9 @@ label {
     margin-top: -10px;
   }
 }
-
 .previous-comment__content {
   position: absolute;
 }
-
 .previous-comment__name {
   position: absolute;
   margin-top: 13px;
@@ -706,7 +704,6 @@ label {
     margin-left: 55px;
   }
 }
-
 .previous-comment__pic {
   position: relative;
   top: 13px;
