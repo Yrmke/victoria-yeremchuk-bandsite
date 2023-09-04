@@ -186,18 +186,18 @@ body {
 }
 @media (min-width: 768px) {
   .description-quote,
-.description-text,
-.description-quote2,
-.description-text-title {
+  .description-text,
+  .description-quote2,
+  .description-text-title {
     padding: 0% 10% 0% 10%;
     margin: 0% 4% 0% 0%;
   }
 }
 @media (min-width: 1280px) {
   .description-quote,
-.description-text,
-.description-quote2,
-.description-text-title {
+  .description-text,
+  .description-quote2,
+  .description-text-title {
     padding: 0% 20% 0% 15%;
   }
 }
@@ -292,8 +292,8 @@ body {
 
 @media (min-width: 768px) {
   .photos-column-one,
-.photos-column-two,
-.photos-column-three {
+  .photos-column-two,
+  .photos-column-three {
     width: 100%;
   }
 }
@@ -462,8 +462,8 @@ h3 {
 }
 @media (min-width: 768px) {
   h1,
-h2,
-h3 {
+  h2,
+  h3 {
     font-size: 36px;
     font-weight: 700;
     line-height: 44px;
@@ -608,21 +608,12 @@ label {
   position: absolute;
   top: 10px;
 }
-#userComment:-ms-input-placeholder {
-  position: absolute;
-  top: 10px;
-}
 #userComment::placeholder {
   position: absolute;
   top: 10px;
 }
 
 ::-moz-placeholder {
-  color: black;
-  padding-left: 4%;
-}
-
-:-ms-input-placeholder {
   color: black;
   padding-left: 4%;
 }
@@ -749,7 +740,7 @@ label {
 }
 @media (min-width: 768px) {
   .description-quote,
-.description-text-title {
+  .description-text-title {
     font-size: 24px;
     line-height: 32px;
   }
@@ -764,8 +755,8 @@ label {
 }
 @media (min-width: 768px) {
   .description-quote2,
-.footer-name,
-.footer-workplace {
+  .footer-name,
+  .footer-workplace {
     font-size: 14px;
     line-height: 22px;
     font-weight: 600;

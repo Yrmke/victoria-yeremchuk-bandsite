@@ -80,9 +80,6 @@
         padding-left: 48px;
         padding-right: 50px;
     }
-    // @include desktop{
-    //     align-items: center;
-    // }
 }
 label{
     color: #AFAFAF;
@@ -159,8 +156,6 @@ background-color: #000000;
     flex-direction: column;
     
     @include tablet{
-        // padding-left: 48px;
-        // padding-right: 50px;
         margin-left: 10%;
         margin-right: 10%;
     }
