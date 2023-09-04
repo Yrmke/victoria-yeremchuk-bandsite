@@ -7,29 +7,28 @@
     display: flex;
     align-items: center;
   }
-}
-
-.nav-logo {
-  display: block;
-  margin: auto;
-  width: 50%;
-  max-width: 120px;
-  height: auto;
-  padding-top: 16px;
+  &-logo {
+    display: block;
+    margin: auto;
+    width: 50%;
+    max-width: 120px;
+    height: auto;
+    padding-top: 16px;
+    
+    @include tablet {
+      width: 100%;
+      max-width: 120px;
+      height: auto;
+      padding: 16px 16px 18px 36px;
+    }
   
-  @include tablet {
-    width: 100%;
-    max-width: 120px;
-    height: auto;
-    padding: 16px 16px 18px 36px;
-  }
-
-  @include desktop{
-    width: 100%;
-    max-width: 120px;
-    height: auto;
-    padding: 16px 16px 18px 36px;
-    margin-left: 30%;
+    @include desktop{
+      width: 100%;
+      max-width: 120px;
+      height: auto;
+      padding: 16px 16px 18px 36px;
+      margin-left: 30%;
+    }
   }
 }
 .nav-list {

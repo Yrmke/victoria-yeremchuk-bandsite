@@ -9,92 +9,116 @@
     @include desktop{
         margin-bottom: 3%;
     }
-}
-.shows-title{
-    @include tablet{
-        padding-left: 32px;
-        margin-top: 5%;
+    &-title{
+        @include tablet{
+            padding-left: 32px;
+            margin-top: 5%;
+        }
+        @include desktop{
+            margin-left: 5%;
+        }
     }
-    @include desktop{
-        margin-left: 5%;
-    }
-}
-// list 
-.shows-list{
-    list-style: none;
-    padding: 0%;
-    width: 90%;
-
-    @include tablet{
-        display: flex;
-        padding-left: 32px;
-    }
-    @include desktop{
-        margin-left: 25%;
-        width: 65%;
-    }
-}
-
-// list items 
-.shows-list__item{
-
-    border-bottom: 1px solid #AFAFAF;
-    padding-bottom: 10px;
-    width: 100vw;
+    &-list{
+        list-style: none;
+        padding: 0%;
+        width: 90%;
     
-    @include tablet{
-        display: flex;
-    justify-content:space-between;
-    &:hover{
-        background-color: #FAFAFA;
+        @include tablet{
+            display: flex;
+            padding-left: 32px;
+        }
+        @include desktop{
+            margin-left: 25%;
+            width: 65%;
+        }
     }
-    &:active {
-        background-color: #AFAFAF;
-    }
-}
-}
-.shows-list__title{
-    color: #AFAFAF;
-    margin: 0%;
-    font-size: 10px;
+    &-list__item{
 
-    @include tablet{
-        display: none;
+        border-bottom: 1px solid #AFAFAF;
+        padding-bottom: 10px;
+        width: 100vw;
+        
+        @include tablet{
+            display: flex;
+        justify-content:space-between;
+        &:hover{
+            background-color: #FAFAFA;
+        }
+        &:active {
+            background-color: #AFAFAF;
+        }
         
     }
-}
-.shows-list__info{
-    margin-top: 0%;
-
-    @include tablet{
-     padding-top: 20px;
     }
-}
-.shows-list__infob{
-    font-weight: 500;
-    margin-top: 0%;
-    @include tablet{
-        margin-bottom: 0%;
-        padding-top: 20px;
-    }
-}
-
-// // button
-.show-list__button{
-    background-color: #323232;
-    color: white;
-    height: 40px;
-    min-width: 150px;
-    border-radius: 4px;
-    border: 0;
-    width: 90%;
-    margin: 0.5rem 0rem 0.8rem 0rem;
+    &-list__title{
+        color: #AFAFAF;
+        margin: 0%;
+        font-size: 10px;
     
-    &:hover{
+        @include tablet{
+            display: none;
+            }
+        
+    }
+    &-list__info{
+        margin-top: 0%;
+    
+        @include tablet{
+         padding-top: 20px;
+        }
+    }
+    &-list__infob{
+        font-weight: 500;
+        margin-top: 0%;
+        @include tablet{
+            margin-bottom: 0%;
+            padding-top: 20px;
+        }
+    }
+    // button
+    &-list__button{
+        background-color: #323232;
+        color: white;
+        height: 40px;
+        min-width: 150px;
+        border-radius: 4px;
+        border: 0;
+        width: 90%;
+        margin: 0.5rem 0rem 0.8rem 0rem;
+        
+        &:hover{
     background-color: black;
+        }
+    
+        @include tablet{
+            width: 20%;
+        }
+    
     }
 
-    @include tablet{
-        width: 20%;
+    &-row{
+        display: none;
+        
+     @include tablet{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 4%;
+        }
+        @include desktop{
+            justify-content:flex-end;
+            margin-right: 18%;
+        }
+        &__element{
+            margin-right: 19%;
+            color: #AFAFAF;
+            font-weight: 600;
+
+            @include desktop{
+                display: flex;
+                justify-content:flex-end;
+                margin-right: 18%;
+            }
+        }
     }
+   
 }

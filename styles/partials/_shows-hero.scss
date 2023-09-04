@@ -2,57 +2,36 @@
 @use "./global" ;
 // hero image
 .hero{
-    height: 35vh;
+    height: 45vh;
     background-image: url("./../../assets/Images/hero-shows.jpg");
     background-size: cover;
-  position: relative;
-  text-align: center;
-  color: white;
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(49, 44, 44, 0.369);
-  }
+    position: relative;
+    text-align: center;
+    color: white;
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(49, 44, 44, 0.369);
+    }
   @include tablet{
-    height: 50vh;
+    height: 70vh;
   }
   @include desktop{
-    height: 45vh;
+    height: 90vh;
   }
-}
-// song from SoundCloud
-iframe{
-    height: 100px;
-    width: 90%;
-    position: relative;
-    top: 10%;
-border-radius: 5px;
-    @include tablet{
-        height: 120px;
-        width: 50%;
-        top: 5%;
-        right: 160px;
-    }
-    @include tablet{
-        height: 170px;
-        width: 40%;
-        top: 5%;
-        left: 20%;
-    }
-}
 
-// text style
-.hero-text{
+&-text{
     position: relative;
     margin: 0%;
     text-align: left;
     padding-left: 16px;
     top: 30px;
+    font-weight: 500;
 
     @include tablet{
         font-size: 24px;
@@ -63,9 +42,9 @@ border-radius: 5px;
         top: 32%;
         padding-left: 48px;
     }
-
 }
-.hero-title{
+
+&-title{
     
     position: relative;
     width: 70vw;
@@ -86,4 +65,25 @@ border-radius: 5px;
         top: 30%;
         padding-left: 48px;
     }
+}
+}
+// song from SoundCloud
+iframe{
+    height: 100px;
+    width: 90%;
+    position: relative;
+    top: 10%;
+    border-radius: 5px;
+        @include tablet{
+            height: 120px;
+            width: 40%;
+            top: 5%;
+            right: 11.875rem;
+        }
+        @include desktop{
+            height: 170px;
+            width: 40%;
+            top: 0%;
+            left: 20%;
+        }
 }

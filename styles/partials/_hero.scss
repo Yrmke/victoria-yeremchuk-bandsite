@@ -23,24 +23,25 @@
     height: 50vh;
   }
   @include desktop{
-    height: 60vh;
+    height: 90vh;
   }
-}
-.hero-text {
-  margin: 0%;
-  position: relative;
-  top: 45%;
-  right: 15%;
-  font-weight: 600;
-  font-size: 24px;
+  &-text {
+    margin: 0%;
+    position: relative;
+    top: 45%;
+    right: 15%;
+    font-weight: 600;
+    font-size: 24px;
+   
+    @include tablet {
+      font-size: 60px;
+      top: 55%;
+      right: 17%;
+    }
   
-  @include tablet {
-    font-size: 60px;
-    top: 55%;
-    right: 17%;
+    @include desktop{
+      right: 25%;
+    }
   }
-
-  @include desktop{
-    right: 25%;
-  }
+  
 }
