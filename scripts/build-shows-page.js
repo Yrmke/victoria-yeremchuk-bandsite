@@ -15,6 +15,26 @@ axios
         showTitle.innerText = "Shows";
         showSection.appendChild(showTitle);
 
+        // DATE VENUE LOCATION ROW
+        const showsRowContainer =  document.createElement("div");
+        showsRowContainer.classList.add("shows-row");
+        showSection.appendChild(showsRowContainer);
+
+        const showsRowDate = document.createElement("p")
+        showsRowDate.classList= ("shows-row__element")
+        showsRowDate.innerText = "DATE";
+        showsRowContainer.appendChild(showsRowDate);
+
+        const showsRowVenue = document.createElement("p")
+        showsRowVenue.classList= ("shows-row__element")
+        showsRowVenue.innerText = "VENUE";
+        showsRowContainer.appendChild(showsRowVenue);
+
+        const showsRowLocation = document.createElement("p")
+        showsRowLocation.classList= ("shows-row__element")
+        showsRowLocation.innerText = "LOCATION";
+        showsRowContainer.appendChild(showsRowLocation);
+
         response.data.forEach((tickets) => {
 
         // FORMATTED DATE
