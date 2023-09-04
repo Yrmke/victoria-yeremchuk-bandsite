@@ -62,7 +62,6 @@ axios
         areaItem.innerText = "LOCATION";
         itemList.appendChild(areaItem);
         
-       
         const locationItem = document.createElement("p");
         locationItem.classList.add("shows-list__info");
         locationItem.innerText = tickets.location;
@@ -73,7 +72,6 @@ axios
         button.innerText = "BUY TICKETS";
         itemList.appendChild(button);
 });
-    
 })
   .catch(function (error) {
     console.log(error);
