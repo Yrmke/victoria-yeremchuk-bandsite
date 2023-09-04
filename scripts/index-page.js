@@ -43,7 +43,7 @@ function displayComment(comment) {
   // date
   const dateElement = document.createElement("p");
   dateElement.classList.add("posted-comment__date");
-  dateElement.innerText = date.getDate() + '/' +  date.getMonth() + '/' + date.getFullYear();
+  dateElement.innerText = date.getMonth()+1  + '/' +  date.getDate() + '/' + date.getFullYear();
   commentEl.appendChild(dateElement);
 
   // description
