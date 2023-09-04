@@ -2,7 +2,7 @@
 @use "./global" ;
 // hero image
 .hero{
-    height: 40vh;
+    height: 45vh;
     background-image: url("./../../assets/Images/hero-shows.jpg");
     background-size: cover;
     position: relative;
@@ -83,7 +83,7 @@ iframe{
         @include desktop{
             height: 170px;
             width: 40%;
-            top:-5%;
+            top: 0%;
             left: 20%;
         }
 }

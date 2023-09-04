@@ -4,7 +4,7 @@ const apiKey = "8d7811c5-bb68-4bf0-8d6a-efe34ee81cfa";
 const usersURL = `https://project-1-api.herokuapp.com/comments?api_key=${apiKey}`;
 const commentList = document.querySelector(".posted-comments");
 
-axios
+  axios
   .get(usersURL)
   .then((response) => {
     console.log(response.data);
@@ -17,8 +17,8 @@ axios
 
 function displayComment(comment) {
 
+  // FORMATTED TIMESTAMP
   const date = new Date(comment.timestamp);
-
   const commentEl = document.createElement("div");
   commentEl.classList.add("previous-comment");
   commentList.appendChild(commentEl);
@@ -51,14 +51,10 @@ function displayComment(comment) {
   descriptionElement.classList.add("previous-comment__description");
   descriptionElement.innerText = comment.comment;
   commentEl.appendChild(descriptionElement);
-
-  
-
 }
 
 
 const form = document.querySelector(".comments-form");
-
 form.addEventListener("submit", handleSubmit);
 
 function handleSubmit(e) {
@@ -71,11 +67,11 @@ function handleSubmit(e) {
     comment: comment,
   };
 
-  axios
-    .post(usersURL, newComment)
-    .then((response) => {
+axios
+  .post(usersURL, newComment)
+  .then((response) => {
       console.log(response.data);
-//
+
 axios
   .get(usersURL)
   .then((response) => {
@@ -89,7 +85,6 @@ axios
   });
 
 // we have posted!!
-
     })
     .catch(function (error) {
       console.log(error);

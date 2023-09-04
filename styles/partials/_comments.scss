@@ -20,7 +20,7 @@
             margin-top: 2%;
         }
         @include desktop{
-            padding-left: 48px;
+            padding-left: 80px;
         }
     }
     // image
@@ -50,6 +50,9 @@
     &-form{
         display: flex;
         flex-direction: column;
+        // @include desktop{
+        //     padding-left: 9%;
+        // }
     }
     &-container{
         display: flex;
@@ -161,6 +164,9 @@ label{
         @include tablet{
             margin-left: 5%;
         }
+        @include desktop{
+            left: 80%;
+        }
     }
     &__description{
         padding-left: 40px;
@@ -170,7 +176,7 @@ label{
             margin-top: -10px;
         }
     }
-    &-comment__content{
+    &__content{
         position: absolute;
     }
     // comment name
