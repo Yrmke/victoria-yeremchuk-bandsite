@@ -20,35 +20,35 @@ function displayComment(comment) {
   // FORMATTED TIMESTAMP
   const date = new Date(comment.timestamp);
   const commentEl = document.createElement("div");
-  commentEl.classList.add("previous-comment");
+  commentEl.classList.add("posted-comment");
   commentList.appendChild(commentEl);
   // empty profile picture
   const profileImageElement = document.createElement("div");
-  profileImageElement.classList.add("previous-comment__pic");
+  profileImageElement.classList.add("posted-comment__pic");
   commentEl.appendChild(profileImageElement);
 
   // comment content
 
   // const includeContent = () =>{
   const commentElement = document.createElement("div");
-  commentElement.classList.add("previous-comment__name");
+  commentElement.classList.add("posted-comment__name");
   commentEl.appendChild(commentElement);
 
   // name
   const nameElement = document.createElement("p");
-  nameElement.classList.add("previous-comment__name");
+  nameElement.classList.add("posted-comment__name");
   nameElement.innerText = comment.name;
   commentEl.appendChild(nameElement);
   console.log(nameElement);
   // date
   const dateElement = document.createElement("p");
-  dateElement.classList.add("previous-comment__date");
+  dateElement.classList.add("posted-comment__date");
   dateElement.innerText = date.getDate() + '/' +  date.getMonth() + '/' + date.getFullYear();
   commentEl.appendChild(dateElement);
 
   // description
   const descriptionElement = document.createElement("p");
-  descriptionElement.classList.add("previous-comment__description");
+  descriptionElement.classList.add("posted-comment__description");
   descriptionElement.innerText = comment.comment;
   commentEl.appendChild(descriptionElement);
 }
