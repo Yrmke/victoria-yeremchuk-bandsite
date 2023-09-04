@@ -68,7 +68,7 @@ axios
         itemList.appendChild(locationItem);
     
         const button = document.createElement("button");
-        button.classList.add("show-list__button");
+        button.classList.add("shows-list__button");
         button.innerText = "BUY TICKETS";
         itemList.appendChild(button);
 });
