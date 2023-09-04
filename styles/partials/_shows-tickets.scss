@@ -95,4 +95,31 @@
         }
     
     }
+
+    &-row{
+        display: none;
+        
+     @include tablet{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 4%;
+        }
+        @include desktop{
+            // display: flex;
+            justify-content:flex-end;
+            margin-right: 18%;
+        }
+        &__element{
+            margin-right: 19%;
+            color: #AFAFAF;
+            font-weight: 600;
+
+            @include desktop{
+                // display: flex;
+                justify-content:flex-end;
+                margin-right: 18%;
+            }
+        }
+    }
+   
 }
