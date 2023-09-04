@@ -9,33 +9,23 @@ axios
   .then((response) => {
     console.log(response.data);
 
-    
-
-    const tickets = response.data[0];
-    function displayShowDates(tickets) {
-        for (let i = 0; i< response.data.length; i++) {
-            
-            displayShowDates(tickets);
-            
-        }
-    }
-    // FORMATTED DATE
-    const date = new Date(tickets.date);
-    const formattedDate = date.toLocaleDateString('en-US', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' });
-
     const showSection = document.querySelector(".shows");
     const showTitle = document.createElement("h2");
         showTitle.classList.add("shows-title");
         showTitle.innerText = "Shows";
         showSection.appendChild(showTitle);
-    
-        // const showSection = document.querySelector(".shows");
-    
+
+        response.data.forEach((tickets) => {
+
+        // FORMATTED DATE
+        const date = new Date(tickets.date);
+        const formattedDate = date.toLocaleDateString('en-US', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' });
+        
         // list
         const showList = document.createElement("ul");
-      showList.classList.add("shows-list");
-      showSection.appendChild(showList);
-    
+        showList.classList.add("shows-list");
+        showSection.appendChild(showList);
+        
         // list items
         const itemList = document.createElement("li");
         itemList.classList.add("shows-list__item");
@@ -82,12 +72,9 @@ axios
         button.classList.add("show-list__button");
         button.innerText = "BUY TICKETS";
         itemList.appendChild(button);
+});
     
-    
-    }
-    
-    // response.data.reverse().forEach(displayShowDates);
-  )
+})
   .catch(function (error) {
     console.log(error);
   });
