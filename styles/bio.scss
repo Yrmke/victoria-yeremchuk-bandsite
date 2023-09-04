@@ -11,18 +11,6 @@
 
 //  TEXT STYLE
 
-.description-title {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 32px;
-
-  @include tablet{
-    font-size: 36px;
-  font-weight: 700;
-  line-height: 44px;
-  }
-}
-
 .description-quote, 
 .description-text-title{
   font-size: 14px;
