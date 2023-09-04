@@ -13,7 +13,7 @@
         }
     
         @include desktop{
-            margin-left: 5%;
+            margin-left: 7%;
         }
     }
     &-img{
@@ -33,7 +33,7 @@
             display:flex;
             flex-wrap:wrap;
             flex-direction: column;
-            padding-left: 36px;
+            margin-left: 36px;
         }
     
         @include desktop{
@@ -42,11 +42,14 @@
     }
 }
 
-.photos
 .photos-column-one, 
 .photos-column-two, 
 .photos-column-three{
     @include tablet {
         width:100%;
+        padding-left: 36px;
+    }
+    @include desktop {
+        padding: 0% 5% 0% 10%;
     }
 }
