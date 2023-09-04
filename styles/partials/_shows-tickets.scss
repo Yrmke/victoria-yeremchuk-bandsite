@@ -105,7 +105,6 @@
         margin-left: 4%;
         }
         @include desktop{
-            // display: flex;
             justify-content:flex-end;
             margin-right: 18%;
         }
@@ -115,7 +114,6 @@
             font-weight: 600;
 
             @include desktop{
-                // display: flex;
                 justify-content:flex-end;
                 margin-right: 18%;
             }
